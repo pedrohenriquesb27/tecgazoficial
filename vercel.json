@@ -1,0 +1,8 @@
+{
+  "name": "tecgazoficial",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/tecgazmooca", "destination": "/tecgazmooca.html" },
+    { "source": "/tecgazguarulhos", "destination": "/tecgazguarulhos.html" }
+  ]
+}
