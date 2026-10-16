@@ -2,3 +2,10 @@ node_modules/
 .vercel/
 .env
 *.log
+scratch/
+.system_generated/
+Thumbs.db
+.DS_Store
+extract_*.js
+
+.vercel

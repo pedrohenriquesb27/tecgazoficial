@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 8080;
+const PORT = 8080;
 const BASE_DIR = __dirname;
 
 const MIME_TYPES = {
@@ -21,10 +21,12 @@ const server = http.createServer((req, res) => {
     let reqUrl = req.url.split('?')[0];
     if (reqUrl === '/') reqUrl = '/index.html';
 
+    // Remove trailing slash if present
     if (reqUrl.length > 1 && reqUrl.endsWith('/')) {
         reqUrl = reqUrl.slice(0, -1);
     }
 
+    // Direct regional route mapping
     if (reqUrl === '/tecgazmooca') {
         reqUrl = '/tecgazmooca.html';
     } else if (reqUrl === '/tecgazguarulhos') {
@@ -34,6 +36,7 @@ const server = http.createServer((req, res) => {
     const safePath = path.normalize(reqUrl).replace(/^(\.\.[\/\\])+/, '');
     let filePath = path.join(BASE_DIR, safePath);
 
+    // Fallback: check if filePath + .html exists for clean URLs
     if (!fs.existsSync(filePath) && fs.existsSync(filePath + '.html')) {
         filePath = filePath + '.html';
     }
@@ -53,5 +56,9 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, '0.0.0.0', () => {
-    console.log(`Servidor TECGAZ rodando na porta ${PORT}`);
+    console.log(`Servidor TECGAZ rodando em http://localhost:${PORT}`);
+    console.log(`Rotas ativas:`);
+    console.log(` - Principal: http://localhost:${PORT}/`);
+    console.log(` - Mooca:     http://localhost:${PORT}/tecgazmooca`);
+    console.log(` - Guarulhos: http://localhost:${PORT}/tecgazguarulhos`);
 });

@@ -347,6 +347,7 @@ h1, h2, h3, h4, .font-heading {
    ANIMAÇÕES DE SCROLL REVEAL / ENTRADA FLUIDA (UI/UX HIGH-END)
    ========================================================================== */
 
+/* Quando o JS estiver ativo, os elementos marcados recebem o estado inicial oculto */
 .reveal-ready .reveal-on-scroll {
     opacity: 0;
     transform: translateY(30px);
@@ -356,11 +357,13 @@ h1, h2, h3, h4, .font-heading {
     will-change: opacity, transform;
 }
 
+/* Quando o Intersection Observer detectar a entrada do elemento */
 .reveal-ready .reveal-on-scroll.is-revealed {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
 
+/* Variação: Entrada suave da esquerda */
 .reveal-ready .reveal-on-scroll.reveal-left {
     transform: translateX(-35px);
 }
@@ -368,6 +371,7 @@ h1, h2, h3, h4, .font-heading {
     transform: translateX(0);
 }
 
+/* Variação: Entrada suave da direita */
 .reveal-ready .reveal-on-scroll.reveal-right {
     transform: translateX(35px);
 }
@@ -375,6 +379,7 @@ h1, h2, h3, h4, .font-heading {
     transform: translateX(0);
 }
 
+/* Variação: Zoom/Scale sutil */
 .reveal-ready .reveal-on-scroll.reveal-scale {
     transform: scale(0.96) translateY(15px);
 }
@@ -382,11 +387,13 @@ h1, h2, h3, h4, .font-heading {
     transform: scale(1) translateY(0);
 }
 
+/* Delays escalonados para grids de cards e blocos */
 .reveal-ready .reveal-delay-1 { transition-delay: 100ms; }
 .reveal-ready .reveal-delay-2 { transition-delay: 200ms; }
 .reveal-ready .reveal-delay-3 { transition-delay: 300ms; }
 .reveal-ready .reveal-delay-4 { transition-delay: 400ms; }
 
+/* Otimização para Mobile: deslocamento menor para rolagem ultrarrápida */
 @media (max-width: 640px) {
     .reveal-ready .reveal-on-scroll {
         transform: translateY(18px);
@@ -406,6 +413,7 @@ h1, h2, h3, h4, .font-heading {
     }
 }
 
+/* Acessibilidade: respeita preferências de menos movimento do sistema operacional */
 @media (prefers-reduced-motion: reduce) {
     .reveal-ready .reveal-on-scroll,
     .reveal-ready .reveal-on-scroll.reveal-left,
@@ -447,11 +455,17 @@ h1, h2, h3, h4, .font-heading {
     background-color: #E52421;
 }
 
+/* ==========================================================================
+   CAMADAS DE ARQUITETURA LIMPA & ELEVAÇÃO LUXURY (LANDING PAGES REGIONAIS)
+   ========================================================================== */
+
+/* Padrão de Micro-textura Técnica Geométrica Sutil */
 .tech-grid-pattern {
     background-image: radial-gradient(rgba(34, 34, 34, 0.06) 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
+/* Card Branco Puro com Sombras Profundas e Relevo Marcante (Drop-Shadow-2XL) */
 .card-elevation-2xl {
     background-color: #ffffff;
     box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.09), 0 8px 24px -4px rgba(0, 0, 0, 0.04);
@@ -464,6 +478,7 @@ h1, h2, h3, h4, .font-heading {
     border-color: rgba(229, 36, 33, 0.5);
 }
 
+/* Card Branco Elevado com Sombras em Camadas (High-End Contrast) */
 .card-luxury-lift {
     background-color: #ffffff;
     border: 1px solid rgba(229, 231, 235, 0.95);
@@ -489,3 +504,4 @@ h1, h2, h3, h4, .font-heading {
     box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.1), 0 6px 16px -3px rgba(229, 36, 33, 0.08);
     border-color: rgba(229, 36, 33, 0.35);
 }
+

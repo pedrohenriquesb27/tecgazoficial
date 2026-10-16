@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECGAZ Guarulhos | Aquecedores a Gás, Venda e Manutenção na Av. Paulo Faccini</title>
+    <meta name="description" content="TECGAZ Unidade Guarulhos: Showroom na Av. Paulo Faccini, venda, instalação express e assistência técnica autorizada de aquecedores a gás Rinnai, Rheem, Komeco e Lorenzetti. Atendimento no Maia, Centro e Alto Tietê. WhatsApp (11) 94030-0560.">
+    <meta name="keywords" content="aquecedor a gas guarulhos, instalacao aquecedor guarulhos, assistencia tecnica rinnai guarulhos, aquecedores paulo faccini, showroom aquecedores guarulhos, tecgaz guarulhos">
+    
+    <!-- Favicon Oficial -->
+    <link rel="icon" type="image/png" href="logo-tecgaz.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tecgaz-red': '#E52421',
+                        'tecgaz-red-hover': '#c41815',
+                        'tecgaz-red-light': '#fef2f2',
+                        'tecgaz-dark': '#222222',
+                        'tecgaz-muted': '#555555',
+                        'tecgaz-gray': '#F8F9FA'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    },
+                    screens: {
+                        'xs': '480px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Estilo Customizado Oficial -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-tecgaz-dark antialiased font-sans selection:bg-tecgaz-red selection:text-white">
+
+    <!-- =========================================================================
+         TOPBAR INFORMATIVA REGIONAL GUARULHOS (LIGHT LUXURY)
+         ========================================================================= -->
+    <aside aria-label="Informações da Loja Guarulhos" class="bg-[#F8F9FA] text-neutral-600 text-xs py-2 px-4 border-b border-neutral-200/80">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-center sm:text-left">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+                <span class="font-medium text-neutral-800 text-[11px] sm:text-xs">
+                    Unidade Guarulhos — Atendimento Imediato em Guarulhos, Bosque Maia, Zona Norte e Alto Tietê
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] sm:text-xs font-semibold">
+                <a href="tel:11940300560" class="hover:text-tecgaz-red transition-colors flex items-center gap-1.5 text-neutral-800">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5 text-tecgaz-red"></i>
+                    (11) 94030-0560
+                </a>
+                <span class="text-neutral-300 hidden xs:inline">|</span>
+                <a href="https://maps.google.com/?q=Av.+Paulo+Faccini+1420+Guarulhos" target="_blank" rel="noopener noreferrer" class="text-neutral-600 hover:text-tecgaz-red transition-colors hidden xs:flex items-center gap-1">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-tecgaz-red"></i>
+                    Av. Paulo Faccini, 1420 - Guarulhos
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- =========================================================================
+         HEADER REGIONAL GUARULHOS COM MENU MOBILE
+         ========================================================================= -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-xs transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo Oficial TECGAZ com Identificação Guarulhos -->
+                <div class="flex items-center gap-3">
+                    <a href="/" class="flex items-center group py-1" aria-label="TECGAZ - Início">
+                        <img src="logo-tecgaz.png" 
+                             srcset="logo-tecgaz.png 1x, logo-tecgaz@2x.png 2x" 
+                             alt="TECGAZ Aquecedores" 
+                             class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                             width="140"
+                             height="54">
+                    </a>
+                    <span class="hidden sm:inline-block h-6 w-px bg-neutral-200"></span>
+                    <div class="hidden sm:flex flex-col">
+                        <span class="text-xs font-extrabold uppercase tracking-wider text-tecgaz-red font-heading">Unidade Guarulhos</span>
+                        <span class="text-[10px] text-neutral-500 font-medium">Showroom Paulo Faccini & Assistência</span>
+                    </div>
+                </div>
+
+                <!-- Navegação Desktop -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-neutral-700">
+                    <a href="#inicio" class="hover:text-tecgaz-red transition-colors">Início</a>
+                    <a href="#servicos" class="hover:text-tecgaz-red transition-colors">Serviços</a>
+                    <a href="#showroom" class="hover:text-tecgaz-red transition-colors flex items-center gap-1">
+                        <i data-lucide="camera" class="w-4 h-4 text-tecgaz-red"></i>
+                        Showroom
+                    </a>
+                    <a href="#avaliacoes" class="hover:text-tecgaz-red transition-colors">Avaliações</a>
+                    <a href="#cobertura" class="hover:text-tecgaz-red transition-colors">Cobertura</a>
+                    <a href="#localizacao" class="hover:text-tecgaz-red transition-colors">Como Chegar</a>
+                    <a href="/" class="text-xs font-bold text-neutral-500 hover:text-tecgaz-dark flex items-center gap-1 border border-neutral-200 px-3 py-1.5 rounded-lg transition-colors">
+                        <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+                        Portal Geral
+                    </a>
+                </nav>
+
+                <!-- Botão de Ação & Botão Menu Mobile -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20aquecedor%20a%20g%C3%A1s." 
+                       target="_blank"
+                       class="btn-red-glow bg-tecgaz-red hover:bg-tecgaz-red-hover text-white px-3.5 sm:px-5 py-2.5 min-h-[44px] rounded-xl font-heading font-bold text-xs sm:text-sm transition-all flex items-center gap-2">
+                        <svg class="w-4 h-4 shrink-0 transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                            <path fill="#FFFFFF" d="M17.47 14.38C17.18 14.23 15.72 13.51 15.45 13.41C15.18 13.31 14.98 13.26 14.78 13.56C14.58 13.86 14.01 14.53 13.84 14.73C13.67 14.93 13.49 14.95 13.2 14.8C12.9 14.65 11.94 14.34 10.81 13.33C9.93 12.54 9.33 11.57 9.16 11.27C8.99 10.97 9.14 10.81 9.29 10.66C9.42 10.53 9.59 10.32 9.74 10.15C9.89 9.98 9.94 9.85 10.04 9.65C10.14 9.45 10.09 9.28 10.02 9.13C9.94 8.98 9.35 7.52 9.1 6.92C8.86 6.34 8.61 6.42 8.43 6.41C8.26 6.4 8.06 6.4 7.86 6.4C7.66 6.4 7.34 6.47 7.07 6.77C6.8 7.07 6.03 7.79 6.03 9.25C6.03 10.71 7.1 12.12 7.25 12.32C7.4 12.52 9.35 15.52 12.33 16.81C13.04 17.12 13.59 17.3 14.02 17.44C14.73 17.67 15.38 17.64 15.89 17.56C16.46 17.48 17.65 16.85 17.9 16.15C18.15 15.46 18.15 14.86 18.07 14.74C18 14.62 17.8 14.53 17.47 14.38Z"/>
+                        </svg>
+                        <span class="whitespace-nowrap">WhatsApp Guarulhos</span>
+                    </a>
+
+                    <!-- Hamburger Button Mobile -->
+                    <button id="mobile-menu-btn" aria-label="Abrir menu de navegação" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl border border-neutral-200 text-neutral-700 hover:bg-neutral-50 transition-colors">
+                        <i data-lucide="menu" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Drawer Menu Mobile -->
+            <div id="mobile-menu" class="hidden lg:hidden border-t border-neutral-100 py-4 space-y-2 bg-white">
+                <a href="#inicio" class="mobile-link flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-800 hover:bg-neutral-50">
+                    <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-4 h-4 text-tecgaz-red"></i> Início</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+                <a href="#servicos" class="mobile-link flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-800 hover:bg-neutral-50">
+                    <span class="flex items-center gap-2"><i data-lucide="flame" class="w-4 h-4 text-tecgaz-red"></i> Serviços Especializados</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+                <a href="#showroom" class="mobile-link flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-800 hover:bg-neutral-50">
+                    <span class="flex items-center gap-2"><i data-lucide="camera" class="w-4 h-4 text-tecgaz-red"></i> Showroom Oficial</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+                <a href="#avaliacoes" class="mobile-link flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-800 hover:bg-neutral-50">
+                    <span class="flex items-center gap-2"><i data-lucide="star" class="w-4 h-4 text-tecgaz-red"></i> Avaliações & Como Funciona</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+                <a href="#cobertura" class="mobile-link flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-800 hover:bg-neutral-50">
+                    <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-tecgaz-red"></i> Cobertura Total</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+                <a href="#localizacao" class="mobile-link flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-800 hover:bg-neutral-50">
+                    <span class="flex items-center gap-2"><i data-lucide="navigation" class="w-4 h-4 text-tecgaz-red"></i> Como Chegar</span>
+                    <i data-lucide="chevron-right" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+                <a href="/" class="flex items-center justify-between py-2.5 px-3 rounded-lg text-sm font-semibold text-neutral-600 hover:bg-neutral-50 border-t border-neutral-100 mt-2">
+                    <span class="flex items-center gap-2"><i data-lucide="home" class="w-4 h-4"></i> Voltar ao Portal Geral</span>
+                    <i data-lucide="arrow-left" class="w-4 h-4 text-neutral-400"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         HERO SECTION REGIONAL GUARULHOS (PADRÃO EDITORIAL LUXO IDÊNTICO AO BANNER PRINCIPAL)
+         ========================================================================= -->
+    <section id="inicio" class="relative overflow-hidden bg-[#F8F9FA] text-[#222222] min-h-[720px] xs:min-h-[740px] sm:min-h-[760px] lg:min-h-[820px] xl:min-h-[860px] flex items-center border-b border-gray-200/60">
+        <!-- Fundo cinematográfico humanizado com a família e degradê suave translúcido -->
+        <div class="cinematic-hero-bg hero-bg absolute inset-0 bg-cover bg-center"></div>
+
+        <!-- Camadas dinâmicas de vapor quente e brilho de água -->
+        <div class="steam-layer" aria-hidden="true"></div>
+        <div class="water-sheen" aria-hidden="true"></div>
+
+        <div class="relative max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-6 sm:py-10 lg:py-12 w-full z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-8 xl:gap-10 items-end">
+                
+                <!-- Lado Esquerdo: Tipografia Editorial, Foco Local em Guarulhos, Botões e Estatísticas -->
+                <div class="lg:col-span-5 xl:col-span-5 space-y-4 sm:space-y-6 text-left relative z-10">
+                    
+                    <!-- Selo Superior Institucional Regional Guarulhos -->
+                    <div class="inline-flex items-center gap-2 sm:gap-2.5 rounded-full border border-neutral-200/80 bg-white/95 backdrop-blur-md px-3.5 sm:px-4 py-1 sm:py-1.5 shadow-2xs">
+                        <span class="flex h-2 w-2 rounded-full bg-[#E52421]"></span>
+                        <span class="text-[11px] sm:text-xs font-semibold text-[#222222] tracking-normal">Revenda & Assistência Autorizada Guarulhos</span>
+                        <span class="text-neutral-300">•</span>
+                        <span class="text-[11px] sm:text-xs font-medium text-neutral-600">Chegada em até 40 min</span>
+                    </div>
+
+                    <!-- Título Principal com Tipografia Editorial e Imponente -->
+                    <div class="space-y-2.5 sm:space-y-3">
+                        <h1 class="font-heading text-2xl xs:text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-[3.15rem] font-extrabold text-[#222222] tracking-tight leading-[1.20] sm:leading-[1.22]">
+                            Água Quente com <br class="hidden sm:inline">
+                            <span class="text-[#E52421]">Segurança</span> e Eficiência em Guarulhos e Região.
+                        </h1>
+                        <p class="text-xs xs:text-sm sm:text-base lg:text-[1.05rem] text-[#555555] font-normal leading-relaxed max-w-xl">
+                            Showroom próprio na Av. Paulo Faccini, estoque a pronta-entrega, instalação técnica credenciada pelas normas ABNT NBR 13103 e suporte ágil no Bosque Maia, Centro, Macedo e Alto Tietê.
+                        </p>
+                    </div>
+
+                    <!-- Selos de Benefícios Locais: Organização e Respiro Visual -->
+                    <div class="flex flex-wrap items-center gap-2 sm:gap-2.5 pt-0.5">
+                        <div class="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg border border-neutral-200/80 bg-white/90 backdrop-blur-sm px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[11px] sm:text-xs font-medium text-[#222222] shadow-2xs">
+                            <i data-lucide="store" class="w-3.5 h-3.5 text-[#E52421] shrink-0"></i>
+                            <span>Showroom Av. Paulo Faccini</span>
+                        </div>
+                        <div class="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg border border-neutral-200/80 bg-white/90 backdrop-blur-sm px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[11px] sm:text-xs font-medium text-[#222222] shadow-2xs">
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                            <span>Normas ABNT & COMGÁS</span>
+                        </div>
+                        <div class="inline-flex items-center gap-1.5 sm:gap-2 rounded-lg border border-neutral-200/80 bg-white/90 backdrop-blur-sm px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-[11px] sm:text-xs font-medium text-[#222222] shadow-2xs">
+                            <i data-lucide="clock-4" class="w-3.5 h-3.5 text-[#E52421] shrink-0"></i>
+                            <span>Plantão Express</span>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação (CTA) Modernos e Sofisticados -->
+                    <div class="space-y-2.5 pt-1">
+                        <div class="flex flex-col xs:flex-row items-stretch xs:items-center gap-2.5 sm:gap-3.5">
+                            <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20aquecedor%20a%20g%C3%A1s." 
+                               target="_blank" 
+                               class="bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 sm:px-7 py-3.5 min-h-[48px] rounded-xl font-heading font-extrabold text-sm sm:text-base tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 group shadow-[0_8px_20px_-4px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_24px_-4px_rgba(37,211,102,0.5)] hover:-translate-y-0.5 w-full xs:w-auto">
+                                <svg class="w-5 h-5 shrink-0 fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                <span>Falar no WhatsApp Guarulhos</span>
+                            </a>
+
+                            <a href="tel:11940300560" class="bg-[#222222] hover:bg-neutral-900 text-white px-5 sm:px-6 py-3.5 min-h-[48px] rounded-xl font-heading font-semibold text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 border border-neutral-800 shadow-sm hover:shadow-md hover:-translate-y-0.5 w-full xs:w-auto group">
+                                <i data-lucide="phone-call" class="w-4 h-4 text-[#E52421] transition-transform group-hover:scale-110"></i>
+                                <span>(11) 94030-0560</span>
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2 text-[11px] sm:text-xs text-neutral-500 font-normal pl-0.5">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                            </span>
+                            <span>Showroom físico: Av. Paulo Faccini, 1420 • Atendimento imediato para residências e condomínios</span>
+                        </div>
+                    </div>
+
+                    <!-- Bloco de Estatísticas Inferior Refinado e Elegante -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 pt-1 max-w-xl">
+                        <div class="rounded-xl bg-white/95 backdrop-blur-md border border-neutral-200/80 p-2.5 sm:p-3.5 shadow-2xs transition-all duration-300 hover:border-neutral-300 hover:shadow-xs">
+                            <div class="font-heading text-lg sm:text-2xl font-extrabold text-[#E52421] tracking-tight leading-none">+15</div>
+                            <div class="text-[10px] sm:text-[11px] font-medium text-neutral-600 mt-1 sm:mt-1.5 leading-snug">Anos em Guarulhos</div>
+                        </div>
+                        <div class="rounded-xl bg-white/95 backdrop-blur-md border border-neutral-200/80 p-2.5 sm:p-3.5 shadow-2xs transition-all duration-300 hover:border-neutral-300 hover:shadow-xs">
+                            <div class="font-heading text-lg sm:text-2xl font-extrabold text-[#E52421] tracking-tight leading-none">+5.000</div>
+                            <div class="text-[10px] sm:text-[11px] font-medium text-neutral-600 mt-1 sm:mt-1.5 leading-snug">Famílias atendidas</div>
+                        </div>
+                        <div class="rounded-xl bg-white/95 backdrop-blur-md border border-neutral-200/80 p-2.5 sm:p-3.5 shadow-2xs transition-all duration-300 hover:border-neutral-300 hover:shadow-xs">
+                            <div class="font-heading text-lg sm:text-2xl font-extrabold text-[#E52421] tracking-tight leading-none">40min</div>
+                            <div class="text-[10px] sm:text-[11px] font-medium text-neutral-600 mt-1 sm:mt-1.5 leading-snug">Plantão express</div>
+                        </div>
+                        <div class="rounded-xl bg-white/95 backdrop-blur-md border border-neutral-200/80 p-2.5 sm:p-3.5 shadow-2xs transition-all duration-300 hover:border-neutral-300 hover:shadow-xs">
+                            <div class="font-heading text-lg sm:text-2xl font-extrabold text-[#E52421] tracking-tight leading-none flex items-center gap-1">
+                                <span>5.0</span>
+                                <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                            </div>
+                            <div class="text-[10px] sm:text-[11px] font-medium text-neutral-600 mt-1 sm:mt-1.5 leading-snug">Nota no Google</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Lado Direito: Vitrine dos Equipamentos e Painel Rotativo das Marcas Autorizadas -->
+                <div class="lg:col-span-7 xl:col-span-7 relative flex flex-col items-center lg:items-end justify-end pb-1 lg:pb-0.5 w-full">
+                    <!-- Brilho avermelhado suave sob os equipamentos -->
+                    <div class="absolute bottom-[10%] left-[2%] right-[2%] h-24 bg-red-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+                    
+                    <!-- Imagem Ampliada do Ecossistema Completo de Aquecimento TECGAZ Flutuando -->
+                    <img src="aquecedores-hero-reais.png" 
+                         alt="Ecossistema completo de aquecimento TECGAZ Guarulhos: Aquecedores a Gás Komeco, Lorenzetti, Rinnai, Rheem, Boilers Conjugados e Energia Solar Térmica" 
+                         width="1415" 
+                         height="480" 
+                         class="heater-float relative z-10 w-full max-w-[280px] xs:max-w-[360px] sm:max-w-[580px] lg:max-w-[880px] xl:max-w-[1020px] 2xl:max-w-[1100px] drop-shadow-[0_22px_40px_rgba(0,0,0,0.18)] select-none">
+
+                    <!-- Painel Rotativo de Marcas Oficiais (Ticker Contínuo abaixo dos Aquecedores) -->
+                    <div class="w-full max-w-[280px] xs:max-w-[360px] sm:max-w-[580px] lg:max-w-[880px] xl:max-w-[1020px] 2xl:max-w-[1100px] relative z-10 mt-2.5 sm:mt-4">
+                        <div class="rounded-2xl bg-white/95 backdrop-blur-md border border-neutral-200/85 px-4 py-2.5 sm:py-3 shadow-2xs hover:shadow-xs transition-shadow overflow-hidden">
+                            <div class="marquee-container w-full overflow-hidden relative">
+                                <div class="animate-marquee-infinite flex items-center py-1">
+                                    <!-- Trilha 1 -->
+                                    <div class="marquee-track flex items-center gap-8 sm:gap-12 shrink-0 pr-8 sm:pr-12">
+                                        <span class="font-heading font-black text-xl sm:text-2xl tracking-[-0.03em] text-[#E52421] select-none hover:opacity-85 transition-opacity" title="Rinnai">Rinnai</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="brand-rheem text-2xl sm:text-[1.85rem] text-[#E52421] italic font-bold select-none leading-none hover:opacity-85 transition-opacity" title="Rheem">Rheem</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-sans font-black text-lg sm:text-xl tracking-[-0.04em] text-[#222222] lowercase select-none hover:opacity-85 transition-opacity" title="komeco">komeco</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-heading font-black text-xs sm:text-sm md:text-base tracking-[0.14em] text-[#222222] uppercase select-none hover:opacity-85 transition-opacity" title="Lorenzetti">LORENZETTI</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-heading font-black text-xl sm:text-2xl tracking-[-0.03em] text-[#E52421] select-none hover:opacity-85 transition-opacity" title="Rinnai">Rinnai</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="brand-rheem text-2xl sm:text-[1.85rem] text-[#E52421] italic font-bold select-none leading-none hover:opacity-85 transition-opacity" title="Rheem">Rheem</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-sans font-black text-lg sm:text-xl tracking-[-0.04em] text-[#222222] lowercase select-none hover:opacity-85 transition-opacity" title="komeco">komeco</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-heading font-black text-xs sm:text-sm md:text-base tracking-[0.14em] text-[#222222] uppercase select-none hover:opacity-85 transition-opacity" title="Lorenzetti">LORENZETTI</span>
+                                    </div>
+                                    <!-- Trilha 2 (Cópia contínua sem saltos) -->
+                                    <div class="marquee-track flex items-center gap-8 sm:gap-12 shrink-0 pr-8 sm:pr-12" aria-hidden="true">
+                                        <span class="font-heading font-black text-xl sm:text-2xl tracking-[-0.03em] text-[#E52421] select-none hover:opacity-85 transition-opacity" title="Rinnai">Rinnai</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="brand-rheem text-2xl sm:text-[1.85rem] text-[#E52421] italic font-bold select-none leading-none hover:opacity-85 transition-opacity" title="Rheem">Rheem</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-sans font-black text-lg sm:text-xl tracking-[-0.04em] text-[#222222] lowercase select-none hover:opacity-85 transition-opacity" title="komeco">komeco</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-heading font-black text-xs sm:text-sm md:text-base tracking-[0.14em] text-[#222222] uppercase select-none hover:opacity-85 transition-opacity" title="Lorenzetti">LORENZETTI</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-heading font-black text-xl sm:text-2xl tracking-[-0.03em] text-[#E52421] select-none hover:opacity-85 transition-opacity" title="Rinnai">Rinnai</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="brand-rheem text-2xl sm:text-[1.85rem] text-[#E52421] italic font-bold select-none leading-none hover:opacity-85 transition-opacity" title="Rheem">Rheem</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-sans font-black text-lg sm:text-xl tracking-[-0.04em] text-[#222222] lowercase select-none hover:opacity-85 transition-opacity" title="komeco">komeco</span>
+                                        <span class="w-1.5 h-1.5 rounded-full bg-neutral-300 shrink-0"></span>
+                                        <span class="font-heading font-black text-xs sm:text-sm md:text-base tracking-[0.14em] text-[#222222] uppercase select-none hover:opacity-85 transition-opacity" title="Lorenzetti">LORENZETTI</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         1º ABAIXO DO HERO: SERVIÇOS E SOLUÇÕES EM GUARULHOS (4 CARDS HIGH-END)
+         ========================================================================= -->
+    <section id="servicos" class="py-14 sm:py-20 bg-white border-b border-neutral-200/80 relative">
+        <!-- Âncora de compatibilidade para navegação -->
+        <span id="produtos" class="absolute -top-24"></span>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Cabeçalho Editorial Refinado da Seção -->
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+                <span class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E52421] bg-red-50 border border-red-100/90 px-3 sm:px-3.5 py-1 rounded-full mb-2.5 sm:mb-3 shadow-2xs">
+                    Soluções Especializadas TECGAZ Guarulhos
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-[#222222] tracking-tight">
+                    Nossos Serviços e Soluções em Guarulhos
+                </h2>
+                <p class="text-neutral-600 text-xs sm:text-base mt-2 sm:mt-2.5 max-w-2xl mx-auto leading-relaxed px-1">
+                    Atendimento técnico credenciado, estoque a pronta-entrega na Av. Paulo Faccini e suporte imediato para residências, condomínios e empresas em toda a Grande São Paulo e Alto Tietê.
+                </p>
+            </div>
+
+            <!-- Grade de 4 Cards High-End com Relevo em Camadas e Sombra Profunda 2XL -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+                
+                <!-- CARD 1: MANUTENÇÃO ESPECIALIZADA -->
+                <div class="group relative flex flex-col justify-between bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-neutral-200/85 hover:border-[#E52421]/60 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_32px_64px_-14px_rgba(229,36,33,0.20),0_12px_28px_-6px_rgba(0,0,0,0.07)] transition-all duration-350 hover:-translate-y-2.5 overflow-hidden ring-1 ring-black/[0.03]">
+                    <!-- Linha sutil de destaque no topo com Vermelho TECGAZ no hover -->
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-neutral-200 group-hover:bg-[#E52421] transition-colors duration-300"></div>
+
+                    <div class="flex flex-col flex-1">
+                        <!-- Miniatura Fotográfica Real Arredondada -->
+                        <div class="relative w-full h-40 xs:h-44 sm:h-48 rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-5 border border-neutral-200/60 shadow-2xs bg-neutral-100 shrink-0">
+                            <img src="servico-manutencao.jpg" 
+                                 alt="Manutenção Especializada de Aquecedores TECGAZ Guarulhos" 
+                                 class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                                 loading="lazy"
+                                 width="600"
+                                 height="338">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                            <span class="absolute top-3 right-3 text-[10px] font-extrabold tracking-wider uppercase bg-white/95 backdrop-blur-md text-[#222222] px-2.5 py-1 rounded-lg shadow-xs border border-white/80">
+                                SUPORTE TÉCNICO
+                            </span>
+                            <div class="absolute bottom-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md text-[#E52421] border border-white/90 shadow-sm flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <i data-lucide="wrench" class="w-5 h-5 stroke-[1.75]"></i>
+                            </div>
+                        </div>
+
+                        <!-- Título do Serviço -->
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors duration-200 leading-snug">
+                            Manutenção Especializada
+                        </h3>
+
+                        <!-- Subtítulo / Destaque -->
+                        <div class="mt-2 sm:mt-2.5 mb-3 sm:mb-3.5">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2.5 py-1 rounded-lg">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Plantão Técnico no Bosque Maia e Região
+                            </span>
+                        </div>
+
+                        <!-- Descrição Editorial -->
+                        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal min-h-0 sm:min-h-[58px]">
+                            Assistência técnica autorizada das principais marcas, peças 100% originais em estoque na Paulo Faccini e diagnóstico preciso com técnicos credenciados.
+                        </p>
+                    </div>
+
+                    <!-- Botão de Ação -->
+                    <div class="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-neutral-200/60">
+                        <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20preciso%20de%20manuten%C3%A7%C3%A3o%20especializada%20para%20meu%20aquecedor." 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-red-glow w-full bg-[#E52421] hover:bg-[#c41815] text-white py-3.5 px-4 min-h-[48px] rounded-xl font-heading font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 shadow-sm hover:shadow-md group/btn">
+                            <svg class="w-4 h-4 shrink-0 transition-transform group-hover/btn:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                                <path fill="#FFFFFF" d="M17.47 14.38C17.18 14.23 15.72 13.51 15.45 13.41C15.18 13.31 14.98 13.26 14.78 13.56C14.58 13.86 14.01 14.53 13.84 14.73C13.67 14.93 13.49 14.95 13.2 14.8C12.9 14.65 11.94 14.34 10.81 13.33C9.93 12.54 9.33 11.57 9.16 11.27C8.99 10.97 9.14 10.81 9.29 10.66C9.42 10.53 9.59 10.32 9.74 10.15C9.89 9.98 9.94 9.85 10.04 9.65C10.14 9.45 10.09 9.28 10.02 9.13C9.94 8.98 9.35 7.52 9.1 6.92C8.86 6.34 8.61 6.42 8.43 6.41C8.26 6.4 8.06 6.4 7.86 6.4C7.66 6.4 7.34 6.47 7.07 6.77C6.8 7.07 6.03 7.79 6.03 9.25C6.03 10.71 7.1 12.12 7.25 12.32C7.4 12.52 9.35 15.52 12.33 16.81C13.04 17.12 13.59 17.3 14.02 17.44C14.73 17.67 15.38 17.64 15.89 17.56C16.46 17.48 17.65 16.85 17.9 16.15C18.15 15.46 18.15 14.86 18.07 14.74C18 14.62 17.8 14.53 17.47 14.38Z"/>
+                            </svg>
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2: VENDA E INSTALAÇÃO -->
+                <div class="group relative flex flex-col justify-between bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-neutral-200/85 hover:border-[#E52421]/60 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_32px_64px_-14px_rgba(229,36,33,0.20),0_12px_28px_-6px_rgba(0,0,0,0.07)] transition-all duration-350 hover:-translate-y-2.5 overflow-hidden ring-1 ring-black/[0.03]">
+                    <!-- Linha sutil de destaque no topo com Vermelho TECGAZ no hover -->
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-neutral-200 group-hover:bg-[#E52421] transition-colors duration-300"></div>
+
+                    <div class="flex flex-col flex-1">
+                        <!-- Miniatura Fotográfica Real Arredondada -->
+                        <div class="relative w-full h-40 xs:h-44 sm:h-48 rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-5 border border-neutral-200/60 shadow-2xs bg-neutral-100 shrink-0">
+                            <img src="servico-instalacao.jpg" 
+                                 alt="Venda e Instalação de Aquecedores TECGAZ Guarulhos" 
+                                 class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                                 loading="lazy"
+                                 width="600"
+                                 height="338">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                            <span class="absolute top-3 right-3 text-[10px] font-extrabold tracking-wider uppercase bg-white/95 backdrop-blur-md text-[#222222] px-2.5 py-1 rounded-lg shadow-xs border border-white/80">
+                                COMERCIAL
+                            </span>
+                            <div class="absolute bottom-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md text-[#E52421] border border-white/90 shadow-sm flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <i data-lucide="flame" class="w-5 h-5 stroke-[1.75]"></i>
+                            </div>
+                        </div>
+
+                        <!-- Título do Serviço -->
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors duration-200 leading-snug">
+                            Venda e Instalação
+                        </h3>
+
+                        <!-- Subtítulo / Destaque -->
+                        <div class="mt-2 sm:mt-2.5 mb-3 sm:mb-3.5">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-neutral-700 bg-neutral-100 border border-neutral-200 px-2.5 py-1 rounded-lg">
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#E52421]"></i>
+                                Pronta-Entrega na Paulo Faccini
+                            </span>
+                        </div>
+
+                        <!-- Descrição Editorial -->
+                        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal min-h-0 sm:min-h-[58px]">
+                            Venda e instalação express de aquecedores digitais Rinnai, Rheem, Komeco e Lorenzetti. Instalação padrão ABNT NBR 13103/COMGÁS com até 3 anos de garantia.
+                        </p>
+                    </div>
+
+                    <!-- Botão de Ação -->
+                    <div class="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-neutral-200/60">
+                        <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20gostaria%20de%20comprar%20um%20aquecedor%20novo%20com%20instala%C3%A7%C3%A3o." 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-red-glow w-full bg-[#E52421] hover:bg-[#c41815] text-white py-3.5 px-4 min-h-[48px] rounded-xl font-heading font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 shadow-sm hover:shadow-md group/btn">
+                            <svg class="w-4 h-4 shrink-0 transition-transform group-hover/btn:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                                <path fill="#FFFFFF" d="M17.47 14.38C17.18 14.23 15.72 13.51 15.45 13.41C15.18 13.31 14.98 13.26 14.78 13.56C14.58 13.86 14.01 14.53 13.84 14.73C13.67 14.93 13.49 14.95 13.2 14.8C12.9 14.65 11.94 14.34 10.81 13.33C9.93 12.54 9.33 11.57 9.16 11.27C8.99 10.97 9.14 10.81 9.29 10.66C9.42 10.53 9.59 10.32 9.74 10.15C9.89 9.98 9.94 9.85 10.04 9.65C10.14 9.45 10.09 9.28 10.02 9.13C9.94 8.98 9.35 7.52 9.1 6.92C8.86 6.34 8.61 6.42 8.43 6.41C8.26 6.4 8.06 6.4 7.86 6.4C7.66 6.4 7.34 6.47 7.07 6.77C6.8 7.07 6.03 7.79 6.03 9.25C6.03 10.71 7.1 12.12 7.25 12.32C7.4 12.52 9.35 15.52 12.33 16.81C13.04 17.12 13.59 17.3 14.02 17.44C14.73 17.67 15.38 17.64 15.89 17.56C16.46 17.48 17.65 16.85 17.9 16.15C18.15 15.46 18.15 14.86 18.07 14.74C18 14.62 17.8 14.53 17.47 14.38Z"/>
+                            </svg>
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3: COMPRA COLETIVA -->
+                <div class="group relative flex flex-col justify-between bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-neutral-200/85 hover:border-[#E52421]/60 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_32px_64px_-14px_rgba(229,36,33,0.20),0_12px_28px_-6px_rgba(0,0,0,0.07)] transition-all duration-350 hover:-translate-y-2.5 overflow-hidden ring-1 ring-black/[0.03]">
+                    <!-- Linha sutil de destaque no topo com Vermelho TECGAZ no hover -->
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-neutral-200 group-hover:bg-[#E52421] transition-colors duration-300"></div>
+
+                    <div class="flex flex-col flex-1">
+                        <!-- Miniatura Fotográfica Real Arredondada -->
+                        <div class="relative w-full h-40 xs:h-44 sm:h-48 rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-5 border border-neutral-200/60 shadow-2xs bg-neutral-100 shrink-0">
+                            <img src="servico-condominio.jpg" 
+                                 alt="Compra Coletiva para Condomínios TECGAZ Guarulhos" 
+                                 class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                                 loading="lazy"
+                                 width="600"
+                                 height="338">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                            <span class="absolute top-3 right-3 text-[10px] font-extrabold tracking-wider uppercase bg-white/95 backdrop-blur-md text-[#222222] px-2.5 py-1 rounded-lg shadow-xs border border-white/80">
+                                CONDOMÍNIOS
+                            </span>
+                            <div class="absolute bottom-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md text-[#E52421] border border-white/90 shadow-sm flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <i data-lucide="building-2" class="w-5 h-5 stroke-[1.75]"></i>
+                            </div>
+                        </div>
+
+                        <!-- Título do Serviço -->
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors duration-200 leading-snug">
+                            Compra Coletiva
+                        </h3>
+
+                        <!-- Subtítulo / Destaque -->
+                        <div class="mt-2 sm:mt-2.5 mb-3 sm:mb-3.5">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-[#E52421] bg-red-50 border border-red-100 px-2.5 py-1 rounded-lg">
+                                <i data-lucide="tag" class="w-3.5 h-3.5 text-[#E52421]"></i>
+                                Ofertas para Prédios em Guarulhos
+                            </span>
+                        </div>
+
+                        <!-- Descrição Editorial -->
+                        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal min-h-0 sm:min-h-[58px]">
+                            Condições comerciais exclusivas direto de fábrica para condomínios residenciais no Maia, Centro, Macedo, Vila Augusta e Alto Tietê com instalação em escala.
+                        </p>
+                    </div>
+
+                    <!-- Botão de Ação -->
+                    <div class="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-neutral-200/60">
+                        <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20gostaria%20de%20uma%20proposta%20de%20compra%20coletiva%20para%20meu%20condom%C3%ADnio." 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-red-glow w-full bg-[#E52421] hover:bg-[#c41815] text-white py-3.5 px-4 min-h-[48px] rounded-xl font-heading font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 shadow-sm hover:shadow-md group/btn">
+                            <svg class="w-4 h-4 shrink-0 transition-transform group-hover/btn:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                                <path fill="#FFFFFF" d="M17.47 14.38C17.18 14.23 15.72 13.51 15.45 13.41C15.18 13.31 14.98 13.26 14.78 13.56C14.58 13.86 14.01 14.53 13.84 14.73C13.67 14.93 13.49 14.95 13.2 14.8C12.9 14.65 11.94 14.34 10.81 13.33C9.93 12.54 9.33 11.57 9.16 11.27C8.99 10.97 9.14 10.81 9.29 10.66C9.42 10.53 9.59 10.32 9.74 10.15C9.89 9.98 9.94 9.85 10.04 9.65C10.14 9.45 10.09 9.28 10.02 9.13C9.94 8.98 9.35 7.52 9.1 6.92C8.86 6.34 8.61 6.42 8.43 6.41C8.26 6.4 8.06 6.4 7.86 6.4C7.66 6.4 7.34 6.47 7.07 6.77C6.8 7.07 6.03 7.79 6.03 9.25C6.03 10.71 7.1 12.12 7.25 12.32C7.4 12.52 9.35 15.52 12.33 16.81C13.04 17.12 13.59 17.3 14.02 17.44C14.73 17.67 15.38 17.64 15.89 17.56C16.46 17.48 17.65 16.85 17.9 16.15C18.15 15.46 18.15 14.86 18.07 14.74C18 14.62 17.8 14.53 17.47 14.38Z"/>
+                            </svg>
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4: SISTEMAS CONJUGADOS & SOLAR TÉRMICO -->
+                <div class="group relative flex flex-col justify-between bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-neutral-200/85 hover:border-[#E52421]/60 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_32px_64px_-14px_rgba(229,36,33,0.20),0_12px_28px_-6px_rgba(0,0,0,0.07)] transition-all duration-350 hover:-translate-y-2.5 overflow-hidden ring-1 ring-black/[0.03]">
+                    <!-- Linha sutil de destaque no topo com Vermelho TECGAZ no hover -->
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-neutral-200 group-hover:bg-[#E52421] transition-colors duration-300"></div>
+
+                    <div class="flex flex-col flex-1">
+                        <!-- Miniatura Fotográfica Real Arredondada -->
+                        <div class="relative w-full h-40 xs:h-44 sm:h-48 rounded-xl sm:rounded-2xl overflow-hidden mb-4 sm:mb-5 border border-neutral-200/60 shadow-2xs bg-neutral-100 shrink-0">
+                            <img src="servico-piscina.jpg" 
+                                 alt="Sistemas Conjugados e Solar Térmico TECGAZ Guarulhos" 
+                                 class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                                 loading="lazy"
+                                 width="600"
+                                 height="338">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                            <span class="absolute top-3 right-3 text-[10px] font-extrabold tracking-wider uppercase bg-white/95 backdrop-blur-md text-[#222222] px-2.5 py-1 rounded-lg shadow-xs border border-white/80">
+                                ALTA VAZÃO & SOLAR
+                            </span>
+                            <div class="absolute bottom-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-md text-[#E52421] border border-white/90 shadow-sm flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <i data-lucide="sun-medium" class="w-5 h-5 stroke-[1.75]"></i>
+                            </div>
+                        </div>
+
+                        <!-- Título do Serviço -->
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors duration-200 leading-snug">
+                            Sistemas Conjugados & Solar
+                        </h3>
+
+                        <!-- Subtítulo / Destaque -->
+                        <div class="mt-2 sm:mt-2.5 mb-3 sm:mb-3.5">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200/80 px-2.5 py-1 rounded-lg">
+                                <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-600"></i>
+                                Alta Eficiência & Economia até 70%
+                            </span>
+                        </div>
+
+                        <!-- Descrição Editorial -->
+                        <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed font-normal min-h-0 sm:min-h-[58px]">
+                            Projetos de engenharia térmica com boilers em aço inox, sistemas conjugados de alta vazão para múltiplas duchas e banheiras, e aquecimento de piscinas e spas.
+                        </p>
+                    </div>
+
+                    <!-- Botão de Ação -->
+                    <div class="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-neutral-200/60">
+                        <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20gostaria%20de%20um%20projeto%20de%20sistema%20conjugado%20ou%20solar." 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn-red-glow w-full bg-[#E52421] hover:bg-[#c41815] text-white py-3.5 px-4 min-h-[48px] rounded-xl font-heading font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 shadow-sm hover:shadow-md group/btn">
+                            <svg class="w-4 h-4 shrink-0 transition-transform group-hover/btn:scale-110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#25D366" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                                <path fill="#FFFFFF" d="M17.47 14.38C17.18 14.23 15.72 13.51 15.45 13.41C15.18 13.31 14.98 13.26 14.78 13.56C14.58 13.86 14.01 14.53 13.84 14.73C13.67 14.93 13.49 14.95 13.2 14.8C12.9 14.65 11.94 14.34 10.81 13.33C9.93 12.54 9.33 11.57 9.16 11.27C8.99 10.97 9.14 10.81 9.29 10.66C9.42 10.53 9.59 10.32 9.74 10.15C9.89 9.98 9.94 9.85 10.04 9.65C10.14 9.45 10.09 9.28 10.02 9.13C9.94 8.98 9.35 7.52 9.1 6.92C8.86 6.34 8.61 6.42 8.43 6.41C8.26 6.4 8.06 6.4 7.86 6.4C7.66 6.4 7.34 6.47 7.07 6.77C6.8 7.07 6.03 7.79 6.03 9.25C6.03 10.71 7.1 12.12 7.25 12.32C7.4 12.52 9.35 15.52 12.33 16.81C13.04 17.12 13.59 17.3 14.02 17.44C14.73 17.67 15.38 17.64 15.89 17.56C16.46 17.48 17.65 16.85 17.9 16.15C18.15 15.46 18.15 14.86 18.07 14.74C18 14.62 17.8 14.53 17.47 14.38Z"/>
+                            </svg>
+                            <span>Falar no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         2º ABAIXO DOS SERVIÇOS: SHOWROOM FÍSICO GUARULHOS (CARROSSEL COM TOUCH SWIPE)
+         ========================================================================= -->
+    <section id="showroom" class="py-14 sm:py-20 bg-[#F8F9FA] border-b border-neutral-200/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+                <span class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E52421] bg-red-50 border border-red-100/90 px-3.5 py-1 rounded-full mb-2.5 shadow-2xs">
+                    <i data-lucide="store" class="w-3.5 h-3.5 text-[#E52421]"></i>
+                    Estrutura Física & Atendimento Presencial
+                </span>
+                <h2 class="text-2xl xs:text-3xl sm:text-4xl font-black font-heading text-[#222222] tracking-tight">
+                    Conheça o Showroom TECGAZ em Guarulhos
+                </h2>
+                <p class="text-neutral-600 text-xs xs:text-sm sm:text-base mt-2.5 leading-relaxed">
+                    Visite nossa loja física na <strong>Av. Paulo Faccini, 1420</strong> (Centro / Maia). Um espaço moderno onde você pode conferir os principais aquecedores digitais em pleno funcionamento, tirar dúvidas com técnicos especializados e escolher o modelo perfeito para o seu banho.
+                </p>
+            </div>
+
+            <!-- Carrossel de Fotos do Showroom Guarulhos -->
+            <div class="relative max-w-5xl mx-auto">
+                
+                <!-- Moldura do Carrossel com Suporte a Toque Mobile (Swipe) -->
+                <div id="showroom-carousel-guarulhos" class="showroom-carousel relative w-full h-[260px] xs:h-[320px] sm:h-[440px] md:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden border border-neutral-200/95 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.12),0_8px_20px_-4px_rgba(0,0,0,0.04)] bg-neutral-100 select-none ring-1 ring-black/[0.04]">
+                    
+                    <!-- Slide 1: Fachada da Loja Guarulhos -->
+                    <div class="showroom-slide active absolute inset-0 w-full h-full">
+                        <img src="showroom-guarulhos-1.jpg" 
+                             alt="Fachada oficial da loja TECGAZ Aquecedores na Avenida Paulo Faccini em Guarulhos" 
+                             class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white text-left">
+                            <span class="inline-block bg-[#E52421] text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md mb-1.5">
+                                Fachada Paulo Faccini
+                            </span>
+                            <h3 class="font-heading font-extrabold text-base sm:text-2xl text-white">
+                                Av. Paulo Faccini, 1420 — Estacionamento em Frente
+                            </h3>
+                            <p class="text-[11px] sm:text-sm text-neutral-200 font-normal hidden xs:block">
+                                Localização privilegiada no Maia com fácil acesso pela Rodovia Dutra e ampla área de atendimento.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Interior Amplo do Showroom -->
+                    <div class="showroom-slide absolute inset-0 w-full h-full">
+                        <img src="showroom-guarulhos-2.jpg" 
+                             alt="Interior moderno do showroom da TECGAZ Guarulhos com aquecedores a gás, boilers e solar" 
+                             class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white text-left">
+                            <span class="inline-block bg-neutral-900/90 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md mb-1.5">
+                                Showroom Completo
+                            </span>
+                            <h3 class="font-heading font-extrabold text-base sm:text-2xl text-white">
+                                Aquecedores Digitais, Boilers Térmicos e Linha Solar
+                            </h3>
+                            <p class="text-[11px] sm:text-sm text-neutral-200 font-normal hidden xs:block">
+                                Maior variedade de equipamentos e marcas autorizadas em exposição contínua na Grande São Paulo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: Bancada de Testes de Água Quente -->
+                    <div class="showroom-slide absolute inset-0 w-full h-full">
+                        <img src="showroom-guarulhos-3.jpg" 
+                             alt="Bancada técnica de teste de temperatura e vazão de água quente na TECGAZ Guarulhos" 
+                             class="w-full h-full object-cover object-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white text-left">
+                            <span class="inline-block bg-[#E52421] text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md mb-1.5">
+                                Bancada de Testes ao Vivo
+                            </span>
+                            <h3 class="font-heading font-extrabold text-base sm:text-2xl text-white">
+                                Demonstração Prática de Pressão e Temperatura
+                            </h3>
+                            <p class="text-[11px] sm:text-sm text-neutral-200 font-normal hidden xs:block">
+                                Teste o funcionamento silencioso e a modulação precisa dos aquecedores antes de comprar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Navegação Anterior/Próximo -->
+                    <button id="guarulhos-prev-btn" aria-label="Foto anterior do showroom" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/90 hover:bg-white text-neutral-800 flex items-center justify-center shadow-lg transition-all hover:scale-105 focus:outline-none">
+                        <i data-lucide="chevron-left" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                    </button>
+                    <button id="guarulhos-next-btn" aria-label="Próxima foto do showroom" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/90 hover:bg-white text-neutral-800 flex items-center justify-center shadow-lg transition-all hover:scale-105 focus:outline-none">
+                        <i data-lucide="chevron-right" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+                    </button>
+
+                    <!-- Selo Superior Flutuante -->
+                    <div class="absolute top-3 left-3 sm:top-4 sm:left-4 z-20 bg-white/95 backdrop-blur-md px-3 py-1 sm:py-1.5 rounded-full border border-neutral-200 shadow-sm flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span class="text-[10px] sm:text-xs font-bold text-neutral-800 font-heading">Showroom Aberto ao Público</span>
+                    </div>
+
+                </div>
+
+                <!-- Indicadores de Slide (Dots) -->
+                <div class="flex items-center justify-center gap-2 mt-4" id="guarulhos-dots">
+                    <button aria-label="Slide 1" class="showroom-dot active w-8 h-2.5 rounded-full bg-[#E52421] transition-all" data-index="0"></button>
+                    <button aria-label="Slide 2" class="showroom-dot w-2.5 h-2.5 rounded-full bg-neutral-300 hover:bg-neutral-400 transition-all" data-index="1"></button>
+                    <button aria-label="Slide 3" class="showroom-dot w-2.5 h-2.5 rounded-full bg-neutral-300 hover:bg-neutral-400 transition-all" data-index="2"></button>
+                </div>
+
+                <!-- 4 Diferenciais do Showroom Físico com Design Editorial Refinado -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mt-8 sm:mt-10 text-left">
+                    <div class="p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/85 shadow-[0_12px_28px_-6px_rgba(0,0,0,0.08),0_4px_10px_-2px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_-6px_rgba(229,36,33,0.15)] hover:-translate-y-1.5 transition-all duration-300 ring-1 ring-black/[0.03]">
+                        <div class="w-9 h-9 rounded-xl bg-red-50 text-[#E52421] flex items-center justify-center mb-2.5">
+                            <i data-lucide="car" class="w-4 h-4"></i>
+                        </div>
+                        <h4 class="text-xs sm:text-sm font-black font-heading text-[#222222]">Estacionamento no Local</h4>
+                        <p class="text-[11px] text-neutral-500 mt-1 leading-snug">Vagas privativas gratuitas em frente à loja na Paulo Faccini.</p>
+                    </div>
+
+                    <div class="p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/85 shadow-[0_12px_28px_-6px_rgba(0,0,0,0.08),0_4px_10px_-2px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_-6px_rgba(229,36,33,0.15)] hover:-translate-y-1.5 transition-all duration-300 ring-1 ring-black/[0.03]">
+                        <div class="w-9 h-9 rounded-xl bg-red-50 text-[#E52421] flex items-center justify-center mb-2.5">
+                            <i data-lucide="flame" class="w-4 h-4"></i>
+                        </div>
+                        <h4 class="text-xs sm:text-sm font-black font-heading text-[#222222]">Testes em Funcionamento</h4>
+                        <p class="text-[11px] text-neutral-500 mt-1 leading-snug">Veja a temperatura e pressão real da água ao vivo na bancada.</p>
+                    </div>
+
+                    <div class="p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/85 shadow-[0_12px_28px_-6px_rgba(0,0,0,0.08),0_4px_10px_-2px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_-6px_rgba(229,36,33,0.15)] hover:-translate-y-1.5 transition-all duration-300 ring-1 ring-black/[0.03]">
+                        <div class="w-9 h-9 rounded-xl bg-red-50 text-[#E52421] flex items-center justify-center mb-2.5">
+                            <i data-lucide="user-check" class="w-4 h-4"></i>
+                        </div>
+                        <h4 class="text-xs sm:text-sm font-black font-heading text-[#222222]">Consultores Técnicos</h4>
+                        <p class="text-[11px] text-neutral-500 mt-1 leading-snug">Dimensionamento exato de vazão para residências e empresas.</p>
+                    </div>
+
+                    <div class="p-4 sm:p-5 rounded-2xl bg-white border border-neutral-200/85 shadow-[0_12px_28px_-6px_rgba(0,0,0,0.08),0_4px_10px_-2px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_-6px_rgba(229,36,33,0.15)] hover:-translate-y-1.5 transition-all duration-300 ring-1 ring-black/[0.03]">
+                        <div class="w-9 h-9 rounded-xl bg-red-50 text-[#E52421] flex items-center justify-center mb-2.5">
+                            <i data-lucide="package-check" class="w-4 h-4"></i>
+                        </div>
+                        <h4 class="text-xs sm:text-sm font-black font-heading text-[#222222]">Pronta-Entrega Imediata</h4>
+                        <p class="text-[11px] text-neutral-500 mt-1 leading-snug">Estoque local em Guarulhos para instalação no dia.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         NOVA SEÇÃO DE ALTA CONVERSÃO: PASSO A PASSO & AVALIAÇÕES GOOGLE 5 ESTRELAS
+         (SUBSTITUINDO A SEÇÃO REDUNDANTE DE FABRICANTES)
+         ========================================================================= -->
+    <section class="py-14 sm:py-20 bg-white border-b border-neutral-200/80 relative">
+        <span id="avaliacoes" class="absolute -top-24"></span>
+        <span id="como-funciona" class="absolute -top-24"></span>
+        <span id="marcas" class="absolute -top-24"></span>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- PARTE 1: PASSO A PASSO DE ATENDIMENTO EXPRESSO -->
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+                <span class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E52421] bg-red-50 border border-red-100/90 px-3.5 py-1 rounded-full mb-2.5 shadow-2xs">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#E52421]"></i>
+                    Simples, Rápido & Sem Burocracia
+                </span>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-[#222222] tracking-tight">
+                    Passo a Passo do Atendimento Expresso
+                </h2>
+                <p class="text-neutral-600 text-xs sm:text-base mt-2.5 leading-relaxed max-w-2xl mx-auto">
+                    Veja como é simples e seguro resolver o aquecimento de água da sua residência ou condomínio em Guarulhos e região em apenas 3 etapas:
+                </p>
+            </div>
+
+            <!-- Grade de 3 Passos Elevados com Sombras Profundas 2XL -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+                
+                <!-- PASSO 1 -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/85 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_28px_56px_-10px_rgba(229,36,33,0.16)] hover:-translate-y-2 transition-all duration-350 relative group text-left flex flex-col justify-between ring-1 ring-black/[0.03]">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 font-heading font-black text-base flex items-center justify-center border border-emerald-200/60 shadow-2xs">
+                                01
+                            </span>
+                            <div class="w-9 h-9 rounded-xl bg-white border border-neutral-200/80 text-emerald-600 flex items-center justify-center shadow-2xs">
+                                <i data-lucide="message-square" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors leading-snug">
+                            1. Contato via WhatsApp
+                        </h3>
+                        <p class="text-xs sm:text-sm text-neutral-600 mt-2.5 leading-relaxed font-normal">
+                            Você nos envia uma mensagem informando sua necessidade (ou foto do aparelho atual). Nossos consultores técnicos atendem em minutos, dimensionando a solução ideal.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-3.5 border-t border-neutral-100 flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                        <span>Resposta ágil em minutos</span>
+                    </div>
+                </div>
+
+                <!-- PASSO 2 -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/85 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_28px_56px_-10px_rgba(229,36,33,0.16)] hover:-translate-y-2 transition-all duration-350 relative group text-left flex flex-col justify-between ring-1 ring-black/[0.03]">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-10 h-10 rounded-xl bg-red-50 text-[#E52421] font-heading font-black text-base flex items-center justify-center border border-red-100 shadow-2xs">
+                                02
+                            </span>
+                            <div class="w-9 h-9 rounded-xl bg-white border border-neutral-200/80 text-[#E52421] flex items-center justify-center shadow-2xs">
+                                <i data-lucide="wrench" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors leading-snug">
+                            2. Visita Técnica Ágil
+                        </h3>
+                        <p class="text-xs sm:text-sm text-neutral-600 mt-2.5 leading-relaxed font-normal">
+                            Nossa equipe técnica credenciada vai até seu endereço com ferramental calibrado e peças 100% originais para realizar a instalação ou diagnóstico preciso no local.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-3.5 border-t border-neutral-100 flex items-center gap-1.5 text-[11px] font-semibold text-neutral-700">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                        <span>Padrão normas ABNT & COMGÁS</span>
+                    </div>
+                </div>
+
+                <!-- PASSO 3 -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/85 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_28px_56px_-10px_rgba(229,36,33,0.16)] hover:-translate-y-2 transition-all duration-350 relative group text-left flex flex-col justify-between ring-1 ring-black/[0.03]">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 font-heading font-black text-base flex items-center justify-center border border-amber-200/60 shadow-2xs">
+                                03
+                            </span>
+                            <div class="w-9 h-9 rounded-xl bg-white border border-neutral-200/80 text-amber-600 flex items-center justify-center shadow-2xs">
+                                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] group-hover:text-[#E52421] transition-colors leading-snug">
+                            3. Instalação com Garantia
+                        </h3>
+                        <p class="text-xs sm:text-sm text-neutral-600 mt-2.5 leading-relaxed font-normal">
+                            Testamos a estanqueidade do gás, modulação da chama e fluxo da água. Você recebe termo de garantia, nota fiscal e desfruta do seu banho quente com total tranquilidade.
+                        </p>
+                    </div>
+                    <div class="mt-5 pt-3.5 border-t border-neutral-100 flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700">
+                        <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                        <span>Até 3 anos de garantia oficial</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PARTE 2: PROVA SOCIAL & DEPOIMENTOS GOOGLE 5 ESTRELAS -->
+            <div class="mt-14 sm:mt-18 pt-10 sm:pt-14 border-t border-neutral-200/80">
+                
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-10 gap-4 text-left">
+                    <div>
+                        <span class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-amber-800 bg-amber-50 border border-amber-200/80 px-3 py-1 rounded-full mb-2 shadow-2xs">
+                            <i data-lucide="star" class="w-3.5 h-3.5 text-amber-500 fill-amber-500"></i>
+                            <span>Satisfação Comprovada</span>
+                        </span>
+                        <h3 class="text-2xl sm:text-3xl font-black font-heading text-[#222222] tracking-tight">
+                            O Que Nossos Clientes Dizem
+                        </h3>
+                    </div>
+
+                    <!-- Selo de Nota Google 4.9/5 -->
+                    <div class="inline-flex items-center gap-2.5 bg-white px-4 py-2.5 rounded-xl border border-neutral-200/85 shadow-[0_8px_24px_-4px_rgba(0,0,0,0.08)] self-start sm:self-auto ring-1 ring-black/[0.02]">
+                        <div class="flex items-center gap-0.5 text-amber-400">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+                        </div>
+                        <span class="text-xs sm:text-sm font-extrabold text-[#222222] font-heading">4.9 / 5.0</span>
+                        <span class="text-[11px] text-neutral-500 font-medium">• Avaliações no Google</span>
+                    </div>
+                </div>
+
+                <!-- Grade de 3 Depoimentos Reais Guarulhos Elevados -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 text-left">
+                    
+                    <!-- Depoimento 1 -->
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/85 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_28px_56px_-10px_rgba(229,36,33,0.15)] hover:-translate-y-2 transition-all duration-350 flex flex-col justify-between ring-1 ring-black/[0.03]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-1 text-amber-400">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                </div>
+                                <span class="text-[10px] text-neutral-400 font-medium">Google Review</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed italic">
+                                "Fui pessoalmente até o showroom na Paulo Faccini, testei o aquecedor funcionando na bancada ao vivo e fechei na hora. No dia seguinte pela manhã a equipe já instalou na minha casa no Bosque Maia. Estrutura de primeiro mundo!"
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-neutral-100 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-red-50 text-[#E52421] font-heading font-black text-xs flex items-center justify-center shrink-0 border border-red-100">
+                                CM
+                            </div>
+                            <div>
+                                <strong class="text-xs font-bold text-[#222222] block leading-tight">Carlos Eduardo Mendes</strong>
+                                <span class="text-[11px] text-neutral-400">Cliente Verificado • Bosque Maia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/85 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_28px_56px_-10px_rgba(229,36,33,0.15)] hover:-translate-y-2 transition-all duration-350 flex flex-col justify-between ring-1 ring-black/[0.03]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-1 text-amber-400">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                </div>
+                                <span class="text-[10px] text-neutral-400 font-medium">Google Review</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed italic">
+                                "O aquecedor estava dando código de erro no display e desligando no banho. O técnico de Guarulhos chegou super rápido, identificou o problema no sensor e trocou por peça original. Preço honesto e atendimento nota 10."
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-neutral-100 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-red-50 text-[#E52421] font-heading font-black text-xs flex items-center justify-center shrink-0 border border-red-100">
+                                JP
+                            </div>
+                            <div>
+                                <strong class="text-xs font-bold text-[#222222] block leading-tight">Juliana Prado</strong>
+                                <span class="text-[11px] text-neutral-400">Cliente Verificada • Centro de Guarulhos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-neutral-200/85 shadow-[0_20px_48px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_28px_56px_-10px_rgba(229,36,33,0.15)] hover:-translate-y-2 transition-all duration-350 flex flex-col justify-between ring-1 ring-black/[0.03]">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-1 text-amber-400">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+                                </div>
+                                <span class="text-[10px] text-neutral-400 font-medium">Google Review</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed italic">
+                                "Fui atendida pelo WhatsApp com muita atenção e no mesmo dia realizaram a manutenção preventiva do meu aquecedor. Técnicos uniformizados, credenciados e muito educados. Empresa séria e de total confiança."
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-neutral-100 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-red-50 text-[#E52421] font-heading font-black text-xs flex items-center justify-center shrink-0 border border-red-100">
+                                BA
+                            </div>
+                            <div>
+                                <strong class="text-xs font-bold text-[#222222] block leading-tight">Beatriz Albuquerque</strong>
+                                <span class="text-[11px] text-neutral-400">Cliente Verificada • Vila Augusta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         COBERTURA AMPLA: ATENDIMENTO ÁGIL EM TODA GUARULHOS E REGIÃO METROPOLITANA
+         ========================================================================= -->
+    <section class="py-14 sm:py-20 bg-[#F8F9FA] border-b border-neutral-200/80 relative">
+        <span id="cobertura" class="absolute -top-24"></span>
+        <span id="bairros" class="absolute -top-24"></span>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-neutral-200/85 shadow-[0_24px_54px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.04)] relative overflow-hidden ring-1 ring-black/[0.03]">
+                <!-- Linha superior de destaque em Vermelho TECGAZ -->
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-[#E52421]"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                    
+                    <!-- Lado Esquerdo: Mensagem de Abrangência Ampla -->
+                    <div class="lg:col-span-7 space-y-4 sm:space-y-5 text-left">
+                        <span class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-[#E52421] bg-red-50 border border-red-100/90 px-3.5 py-1 rounded-full shadow-2xs">
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-[#E52421]"></i>
+                            Sem Restrição Geográfica • Suporte Express
+                        </span>
+                        
+                        <h2 class="text-2xl xs:text-3xl sm:text-4xl font-black font-heading text-[#222222] tracking-tight leading-[1.2]">
+                            Atendimento Ágil em Toda Guarulhos, Alto Tietê e Região Metropolitana
+                        </h2>
+                        
+                        <p class="text-xs xs:text-sm sm:text-base text-neutral-600 font-normal leading-relaxed">
+                            Nossas viaturas e equipes técnicas credenciadas circulam diariamente por todos os bairros de Guarulhos, Arujá, Mairiporã, Santa Isabel, Zona Norte de SP e região do Alto Tietê. Onde quer que você esteja, a TECGAZ chega com agilidade, estoque local de peças e conformidade técnica garantida pelas normas ABNT NBR 13103 e COMGÁS.
+                        </p>
+
+                        <!-- 3 Selos de Confiança Operacional -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+                            <div class="flex items-center gap-3 bg-neutral-50/80 hover:bg-white p-3.5 rounded-xl border border-neutral-200/90 shadow-2xs hover:shadow-xs transition-all duration-300">
+                                <div class="w-9 h-9 rounded-lg bg-red-50 text-[#E52421] flex items-center justify-center shrink-0">
+                                    <i data-lucide="truck" class="w-4 h-4"></i>
+                                </div>
+                                <div class="text-left">
+                                    <strong class="text-xs font-bold text-[#222222] block leading-tight">Frotas Volantes</strong>
+                                    <span class="text-[10px] text-neutral-500">Plantão rápido no Maia e Dutra</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 bg-neutral-50/80 hover:bg-white p-3.5 rounded-xl border border-neutral-200/90 shadow-2xs hover:shadow-xs transition-all duration-300">
+                                <div class="w-9 h-9 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+                                    <i data-lucide="award" class="w-4 h-4"></i>
+                                </div>
+                                <div class="text-left">
+                                    <strong class="text-xs font-bold text-[#222222] block leading-tight">Normas ABNT</strong>
+                                    <span class="text-[10px] text-neutral-500">NBR 13103 e COMGÁS</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 bg-neutral-50/80 hover:bg-white p-3.5 rounded-xl border border-neutral-200/90 shadow-2xs hover:shadow-xs transition-all duration-300">
+                                <div class="w-9 h-9 rounded-lg bg-neutral-100 text-[#222222] flex items-center justify-center shrink-0">
+                                    <i data-lucide="wrench" class="w-4 h-4"></i>
+                                </div>
+                                <div class="text-left">
+                                    <strong class="text-xs font-bold text-[#222222] block leading-tight">Peças Originais</strong>
+                                    <span class="text-[10px] text-neutral-500">Reparo direto no local</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lado Direito: Card de Ação Rápida no WhatsApp -->
+                    <div class="lg:col-span-5 bg-[#F8F9FA] p-6 sm:p-8 rounded-2xl border border-neutral-200/95 shadow-[0_10px_28px_-6px_rgba(0,0,0,0.06)] text-center flex flex-col justify-between space-y-4">
+                        <div class="space-y-2.5">
+                            <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border border-emerald-200/70 shadow-2xs">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                                <span>Plantão Técnico Disponível</span>
+                            </div>
+                            <h3 class="font-heading font-black text-lg sm:text-xl text-[#222222] leading-snug">
+                                Deseja atendimento para sua residência ou condomínio?
+                            </h3>
+                            <p class="text-xs text-neutral-500 leading-relaxed max-w-sm mx-auto">
+                                Clique no botão abaixo e confirme o tempo estimado de chegada de um técnico de Guarulhos até o seu endereço.
+                            </p>
+                        </div>
+
+                        <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20TECGAZ%20Guarulhos%20e%20gostaria%20de%20confirmar%20o%20tempo%20de%20atendimento%20para%20o%20meu%20endere%C3%A7o." 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white py-3.5 px-5 min-h-[48px] rounded-xl font-heading font-extrabold text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2.5 shadow-[0_8px_20px_-4px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_24px_-4px_rgba(37,211,102,0.5)] hover:-translate-y-0.5 group">
+                            <svg class="w-5 h-5 shrink-0 fill-white transition-transform group-hover:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>Consultar Atendimento no Meu Endereço</span>
+                        </a>
+
+                        <div class="text-[11px] text-neutral-400">
+                            Atendimento rápido para residências, condomínios e empresas
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         LOCALIZAÇÃO & COMO CHEGAR (100% CLEAN - FIM DO BLOCO PRETO)
+         ========================================================================= -->
+    <section id="localizacao" class="py-14 sm:py-20 bg-[#F8F9FA] border-b border-neutral-200/80 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white text-tecgaz-dark rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-neutral-200/85 shadow-[0_24px_54px_-12px_rgba(0,0,0,0.11),0_8px_24px_-4px_rgba(0,0,0,0.04)] relative overflow-hidden ring-1 ring-black/[0.03]">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                    
+                    <!-- Informações da Loja Guarulhos -->
+                    <div class="lg:col-span-6 space-y-5 text-left">
+                        <span class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold uppercase tracking-widest text-tecgaz-red bg-red-50 border border-red-100/90 px-3 py-1 rounded-full shadow-2xs">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-tecgaz-red"></i>
+                            Venha nos Visitar
+                        </span>
+                        
+                        <h2 class="text-2xl sm:text-3xl font-black font-heading text-tecgaz-dark">
+                            Loja & Showroom TECGAZ Guarulhos
+                        </h2>
+                        
+                        <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">
+                            Localização privilegiada na Av. Paulo Faccini, com estacionamento privativo e espaço para teste ao vivo dos aquecedores.
+                        </p>
+                        
+                        <div class="space-y-3.5 text-xs sm:text-sm text-neutral-700">
+                            <div class="flex items-start gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-red-50 text-tecgaz-red flex items-center justify-center shrink-0 mt-0.5 border border-red-100">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-tecgaz-dark block font-bold">Endereço Completo:</strong>
+                                    <span>Av. Paulo Faccini, 1420 - Centro / Maia, Guarulhos - SP</span><br>
+                                    <span class="text-xs text-neutral-500">CEP: 07115-260 (Em frente às melhores referências de comércio e fácil acesso Dutra)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-red-50 text-tecgaz-red flex items-center justify-center shrink-0 mt-0.5 border border-red-100">
+                                    <i data-lucide="clock" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-tecgaz-dark block font-bold">Horário de Funcionamento:</strong>
+                                    <span>Segunda a Sexta: 08h00 às 18h00 | Sábado: 08h00 às 13h00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5 border border-emerald-100">
+                                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-tecgaz-dark block font-bold">Telefone e WhatsApp Direto:</strong>
+                                    <span class="text-base font-extrabold text-tecgaz-dark">(11) 94030-0560</span>
+                                    <span class="text-xs text-neutral-500 block">Atendimento rápido para dúvidas e orçamentos</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botões de Ação da Loja -->
+                        <div class="flex flex-col sm:flex-row gap-3 pt-3">
+                            <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20setor%20comercial%20da%20TECGAZ%20Guarulhos." 
+                               target="_blank"
+                               class="bg-[#25D366] hover:bg-[#20bd5a] text-white px-5 sm:px-6 py-3.5 min-h-[48px] rounded-xl font-heading font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-sm group w-full sm:w-auto">
+                                <svg class="w-4 h-4 fill-white shrink-0 transition-transform group-hover:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                <span>WhatsApp Guarulhos</span>
+                            </a>
+                            <a href="https://maps.google.com/?q=Av.+Paulo+Faccini+1420+Guarulhos" 
+                               target="_blank"
+                               class="bg-neutral-900 hover:bg-neutral-800 text-white px-5 sm:px-6 py-3.5 min-h-[48px] rounded-xl font-heading font-semibold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2 shadow-2xs w-full sm:w-auto">
+                                <i data-lucide="navigation" class="w-4 h-4 text-tecgaz-red"></i>
+                                <span>Abrir no Google Maps</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mini-Mapa Interativo Google Maps -->
+                    <div class="lg:col-span-6">
+                        <div class="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-neutral-200/95 shadow-[0_12px_32px_-6px_rgba(0,0,0,0.1)] group/map bg-neutral-100">
+                            <!-- Badge Flutuante no Topo do Mapa -->
+                            <div class="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-neutral-200/80 shadow-xs flex items-center gap-2 pointer-events-none z-10">
+                                <span class="w-2 h-2 rounded-full bg-[#E52421] animate-ping"></span>
+                                <span class="text-xs font-bold text-[#222222] font-heading">Showroom Guarulhos</span>
+                            </div>
+
+                            <!-- Botão Traçar Rota sobre o Mapa -->
+                            <a href="https://maps.google.com/?q=Av.+Paulo+Faccini,+1420+-+Guarulhos+-+SP" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="absolute bottom-3 right-3 bg-white/95 hover:bg-white text-xs font-bold text-[#222222] hover:text-[#E52421] px-3.5 py-2 min-h-[36px] rounded-xl border border-neutral-200/90 shadow-md transition-all flex items-center gap-1.5 z-10">
+                                <i data-lucide="navigation" class="w-3.5 h-3.5 text-[#E52421]"></i>
+                                <span>Traçar Rota GPS</span>
+                            </a>
+
+                            <!-- Iframe Google Maps -->
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Av.%20Paulo%20Faccini,%201420%20-%20Guarulhos%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                                class="w-full h-full border-0 filter saturate-[0.95]" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Mapa da Loja TECGAZ Guarulhos">
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         FOOTER INSTITUCIONAL LIMPO (LIGHT LUXURY - FIM DO RODAPÉ PRETO)
+         ========================================================================= -->
+    <footer class="bg-white text-neutral-600 text-xs py-12 pb-28 sm:pb-14 border-t border-neutral-200/90">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-neutral-100">
+                <div class="flex items-center gap-3">
+                    <img src="logo-tecgaz.png" alt="TECGAZ Aquecedores" class="h-9 w-auto object-contain">
+                    <span class="text-neutral-300">|</span>
+                    <span class="text-neutral-800 font-bold font-heading">Unidade Guarulhos — Grande São Paulo</span>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 font-semibold">
+                    <a href="/" class="hover:text-tecgaz-red transition-colors">Portal Geral TECGAZ</a>
+                    <a href="tecgazmooca" class="hover:text-tecgaz-red transition-colors">Unidade Mooca</a>
+                    <a href="#showroom" class="hover:text-tecgaz-red transition-colors">Showroom</a>
+                    <a href="#produtos" class="hover:text-tecgaz-red transition-colors">Serviços</a>
+                    <a href="#localizacao" class="hover:text-tecgaz-red transition-colors">Endereço</a>
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500 text-center md:text-left">
+                <p>© 2026 TECGAZ Aquecedores — Unidade Guarulhos. Todos os direitos reservados. CNPJ ativo.</p>
+                <p>Instalações em conformidade rigorosa com normas ABNT NBR 13103 e regulamentações técnicas vigentes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         BOTÃO FLUTUANTE DE WHATSAPP GUARULHOS (TOUCH-FRIENDLY & PULSO VERDE)
+         ========================================================================= -->
+    <aside aria-label="Atendimento rápido no WhatsApp Guarulhos" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
+        <a href="https://wa.me/5511940300560?text=Ol%C3%A1!%20Vim%20pela%20p%C3%A1gina%20de%20Guarulhos%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20aquecedor." 
+           target="_blank" 
+           class="whatsapp-pulse flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-[0_8px_30px_rgba(37,211,102,0.45)] transition-all duration-300 group cursor-pointer"
+           aria-label="Falar com a TECGAZ Guarulhos pelo WhatsApp">
+            <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-white shrink-0 transition-transform group-hover:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            <span class="hidden sm:inline font-heading font-bold text-sm tracking-wide">WhatsApp Guarulhos</span>
+        </a>
+    </aside>
+
+    <!-- =========================================================================
+         SCRIPTS: CARROSSEL COM SWIPE MOBILE + MENU MOBILE
+         ========================================================================= -->
+    <script>
+        // Inicializar ícones do Lucide
+        lucide.createIcons();
+
+        // Menu Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Carrossel de Showroom Guarulhos com Touch Swipe
+        (function() {
+            const carousel = document.getElementById('showroom-carousel-guarulhos');
+            if (!carousel) return;
+
+            const slides = carousel.querySelectorAll('.showroom-slide');
+            const dots = document.querySelectorAll('#guarulhos-dots .showroom-dot');
+            const prevBtn = document.getElementById('guarulhos-prev-btn');
+            const nextBtn = document.getElementById('guarulhos-next-btn');
+            let currentSlide = 0;
+            let autoPlayInterval = null;
+
+            function goToSlide(index) {
+                if (index < 0) index = slides.length - 1;
+                if (index >= slides.length) index = 0;
+                
+                slides.forEach((s, i) => {
+                    s.classList.toggle('active', i === index);
+                });
+                dots.forEach((d, i) => {
+                    d.classList.toggle('active', i === index);
+                    if (i === index) {
+                        d.classList.remove('w-2.5', 'bg-neutral-300');
+                        d.classList.add('w-8', 'bg-[#E52421]');
+                    } else {
+                        d.classList.remove('w-8', 'bg-[#E52421]');
+                        d.classList.add('w-2.5', 'bg-neutral-300');
+                    }
+                });
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                goToSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                goToSlide(currentSlide - 1);
+            }
+
+            if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetAutoPlay(); });
+            if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetAutoPlay(); });
+
+            dots.forEach((dot) => {
+                dot.addEventListener('click', () => {
+                    const idx = parseInt(dot.getAttribute('data-index'), 10);
+                    goToSlide(idx);
+                    resetAutoPlay();
+                });
+            });
+
+            // Autoplay (4.5 segundos)
+            function startAutoPlay() {
+                if (!autoPlayInterval) {
+                    autoPlayInterval = setInterval(nextSlide, 4500);
+                }
+            }
+            function stopAutoPlay() {
+                if (autoPlayInterval) {
+                    clearInterval(autoPlayInterval);
+                    autoPlayInterval = null;
+                }
+            }
+            function resetAutoPlay() {
+                stopAutoPlay();
+                startAutoPlay();
+            }
+
+            carousel.addEventListener('mouseenter', stopAutoPlay);
+            carousel.addEventListener('mouseleave', startAutoPlay);
+
+            // Suporte Nativo a Gesto de Arraste (Touch Swipe) Mobile
+            let startX = 0;
+            let startY = 0;
+            let endX = 0;
+            let endY = 0;
+
+            carousel.addEventListener('touchstart', (e) => {
+                stopAutoPlay();
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+            }, { passive: true });
+
+            carousel.addEventListener('touchmove', (e) => {
+                endX = e.touches[0].clientX;
+                endY = e.touches[0].clientY;
+            }, { passive: true });
+
+            carousel.addEventListener('touchend', () => {
+                const diffX = startX - endX;
+                const diffY = startY - endY;
+
+                // Apenas dispara swipe horizontal se o deslocamento em X for maior que em Y e maior que 35px
+                if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 35) {
+                    if (diffX > 0) {
+                        nextSlide(); // Arrastou para a esquerda -> próximo
+                    } else {
+                        prevSlide(); // Arrastou para a direita -> anterior
+                    }
+                }
+                resetAutoPlay();
+            });
+
+            startAutoPlay();
+        })();
+    </script>
+</body>
+</html>

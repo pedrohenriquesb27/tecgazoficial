@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     const totalSlides = slides.length;
     let carouselInterval = null;
-    const AUTO_DELAY = 6000;
+    const AUTO_DELAY = 6000; // 6 segundos por banner
 
     function showSlide(index) {
         if (index < 0) {
@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carouselContainer.addEventListener('touchend', startAutoplay, { passive: true });
         }
 
+        // Suporte avançado a swipe em smartphones (Mobile-First Touch Gestures)
         let touchStartX = 0;
         let touchStartY = 0;
         let touchEndX = 0;
@@ -148,13 +149,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const diffX = touchEndX - touchStartX;
             const diffY = touchEndY - touchStartY;
             
+            // Verifica se o gesto foi primordialmente horizontal (evita disparar ao rolar verticalmente)
             if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 35) {
                 if (diffX > 0) {
-                    showSlide(currentSlide - 1);
+                    showSlide(currentSlide - 1); // Deslizar para a direita -> slide anterior
                 } else {
-                    showSlide(currentSlide + 1);
+                    showSlide(currentSlide + 1); // Deslizar para a esquerda -> próximo slide
                 }
-                startAutoplay();
+                startAutoplay(); // Reinicia o timer após interação
             }
         }
     }
@@ -256,6 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Submissão do formulário de orçamento rápido -> Redireciona para o WhatsApp da unidade escolhida
     if (budgetForm) {
         budgetForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -346,12 +349,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const revealElements = document.querySelectorAll('.reveal-on-scroll');
         if (!revealElements.length) return;
 
+        // Se o usuário prefere menos movimento no sistema, não ativa o efeito
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             return;
         }
 
+        // Habilita a classe reveal-ready no body para ativar os estilos de animação com segurança progressiva
         document.body.classList.add('reveal-ready');
 
+        // Cria o Intersection Observer otimizado
         const observerOptions = {
             root: null,
             rootMargin: '0px 0px -40px 0px',
@@ -362,12 +368,14 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-revealed');
+                    // Libera o observador para liberar memória e evitar re-animações desnecessárias
                     observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
         revealElements.forEach(el => {
+            // Se o elemento já estiver visível na tela inicial, revela imediatamente
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight - 30 && rect.bottom > 0) {
                 el.classList.add('is-revealed');
