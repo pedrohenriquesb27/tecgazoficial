@@ -1,0 +1,491 @@
+/* Estilos personalizados complementares ao Tailwind CSS para o site da Tecgáz Aquecedores */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800;900&family=Playball&display=swap');
+
+:root {
+    --primary-red: #E52421;
+    --primary-red-hover: #c41815;
+    --primary-red-light: #fef2f2;
+    --text-dark: #222222;
+    --text-muted: #555555;
+    --bg-light: #F8F9FA;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Transições suaves para os slides do carrossel */
+#hero-carousel {
+    touch-action: pan-y pinch-zoom;
+}
+
+.carousel-slide {
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.02);
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    z-index: 10;
+}
+
+/* Barra de progresso do carrossel */
+.indicator-bar {
+    transition: all 0.4s ease;
+}
+
+.indicator-bar.active {
+    width: 2.5rem;
+    background-color: #E52421;
+}
+
+/* Efeito de zoom sutil nas imagens de fundo */
+.hero-bg {
+    transition: transform 7s ease-out;
+}
+
+.carousel-slide.active .hero-bg {
+    transform: scale(1.05);
+}
+
+/* Efeitos de cards e botões */
+.btn-red-glow {
+    box-shadow: 0 4px 14px 0 rgba(229, 36, 33, 0.39);
+    transition: all 0.3s ease;
+}
+
+.btn-red-glow:hover {
+    box-shadow: 0 6px 20px rgba(229, 36, 33, 0.55);
+    transform: translateY(-2px);
+}
+
+.card-hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* Botão Flutuante de WhatsApp com Pulso */
+.whatsapp-pulse {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+    0% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        transform: scale(0.98);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #E52421;
+}
+
+/* Bancada de quartzo e vitrine de aquecedores */
+.countertop-slab {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F1F3F5 40%, #E2E6EA 100%);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 3px solid #ced4da;
+}
+
+.heater-card {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+}
+
+.heater-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.heater-shadow {
+    filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.15));
+}
+
+/* Brilho do display digital (LED) */
+.display-glow-blue {
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.8), 0 0 15px rgba(14, 165, 233, 0.5);
+}
+
+.display-glow-amber {
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.8), 0 0 15px rgba(245, 158, 11, 0.5);
+}
+
+/* Acabamento em Vidro Preto Espelhado (Komeco Black Glass) */
+.glass-black-finish {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #030712 100%);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25), 0 12px 24px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* Acabamento Grafite Escuro Metálico (Lorenzetti Titanium) */
+.graphite-metal-finish {
+    background: linear-gradient(180deg, #4b5563 0%, #374151 50%, #1f2937 100%);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de iluminação limpa de estúdio fotográfico */
+.studio-lighting {
+    background: radial-gradient(ellipse at 50% 40%, #FFFFFF 0%, #F9FAFB 55%, #F3F4F6 100%);
+}
+
+.studio-countertop {
+    background: linear-gradient(180deg, #FFFFFF 0%, #E5E7EB 70%, #D1D5DB 100%);
+    box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    border-bottom: 2px solid #9ca3af;
+}
+
+/* Barra de progresso do carrossel (Light Mode) */
+.indicator-bar {
+    transition: all 0.4s ease;
+    background-color: #cbd5e1;
+}
+
+.indicator-bar.active {
+    width: 2.5rem;
+    background-color: #E52421 !important;
+}
+
+/* ==========================================================================
+   EFEITOS CINEMATOGRÁFICOS DO HERO (LIGHT MODE SUAVE & ELEGANTE)
+   ========================================================================== */
+
+/* Fundo cinematográfico humanizado: Família (pais e filhos) em ambiente acolhedor de água quente */
+.cinematic-hero-bg {
+    background: 
+        linear-gradient(90deg, 
+            rgba(248, 249, 250, 0.88) 0%, 
+            rgba(248, 249, 250, 0.75) 36%, 
+            rgba(248, 249, 250, 0.42) 62%, 
+            rgba(248, 249, 250, 0.65) 100%
+        ),
+        url('familia-pais-filhos.jpg') 50% center / cover no-repeat;
+}
+
+@media (max-width: 1023px) {
+    .cinematic-hero-bg {
+        background: 
+            linear-gradient(180deg, 
+                rgba(248, 249, 250, 0.94) 0%, 
+                rgba(248, 249, 250, 0.82) 50%, 
+                rgba(248, 249, 250, 0.55) 100%
+            ),
+            url('familia-pais-filhos.jpg') 45% top / cover no-repeat;
+    }
+}
+
+/* Enquadramentos fluidos e focos otimizados para os banners (Sem Cortes em Mobile) */
+.slide-bg-banheira {
+    background-image: url('banho-relaxante-banheira-foco.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+@media (max-width: 639px) {
+    .slide-bg-banheira {
+        background-position: 45% center;
+    }
+}
+
+.slide-bg-conjugados {
+    background-image: url('sistema-conjugado-banheiro.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+@media (max-width: 639px) {
+    .slide-bg-conjugados {
+        background-position: 55% center;
+    }
+}
+
+.slide-bg-solar {
+    background-image: url('sistema-solar-termico-telhado.jpg');
+    background-size: cover;
+    background-position: 50% 18%;
+}
+@media (min-width: 640px) {
+    .slide-bg-solar {
+        background-position: center center;
+    }
+}
+
+.slide-bg-piscina {
+    background-image: url('piscina-aquecida-familia.jpg');
+    background-size: cover;
+    background-position: 65% center;
+}
+@media (min-width: 640px) {
+    .slide-bg-piscina {
+        background-position: center center;
+    }
+}
+
+/* Camada de vapor quente e suave sobre fundo claro */
+.steam-layer {
+    opacity: 0.35;
+    pointer-events: none;
+    background: radial-gradient(at 82% 72%, rgba(255, 255, 255, 0.75), transparent 26%), radial-gradient(at 72% 38%, rgba(255, 255, 255, 0.6), transparent 22%);
+    animation: 8s ease-in-out infinite alternate tecgaz-steam;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+/* Camada de brilho de água / reflexo dinâmico */
+.water-sheen {
+    pointer-events: none;
+    background: linear-gradient(105deg, transparent 52%, rgba(255, 255, 255, 0.45) 62%, transparent 72%) 0 0 / 220% 100%;
+    animation: 9s linear infinite tecgaz-sheen;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+/* Efeito de levitação / flutuação suave dos aquecedores */
+.heater-float {
+    animation: 5.5s ease-in-out infinite tecgaz-float;
+    will-change: transform;
+}
+
+@keyframes tecgaz-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes tecgaz-steam {
+    0% {
+        opacity: 0.25;
+        transform: translateY(3%) scale(1);
+    }
+    100% {
+        opacity: 0.50;
+        transform: translate(-2%, -4%) scale(1.08);
+    }
+}
+
+@keyframes tecgaz-sheen {
+    0% {
+        background-position: 120% 0;
+    }
+    100% {
+        background-position: -120% 0;
+    }
+}
+
+/* ==========================================================================
+   PAINEL ROTATIVO DE MARCAS (MARQUEE INFINITO NO BANNER HERO)
+   ========================================================================== */
+
+.brand-rheem {
+    font-family: 'Playball', 'Brush Script MT', 'Segoe Script', cursive, serif;
+    font-weight: 700;
+}
+
+.marquee-container {
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.animate-marquee-infinite {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 24s linear infinite;
+    will-change: transform;
+}
+
+.animate-marquee-infinite:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ==========================================================================
+   ANIMAÇÕES DE SCROLL REVEAL / ENTRADA FLUIDA (UI/UX HIGH-END)
+   ========================================================================== */
+
+.reveal-ready .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition-property: opacity, transform;
+    transition-duration: 0.75s;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-ready .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.reveal-ready .reveal-on-scroll.reveal-left {
+    transform: translateX(-35px);
+}
+.reveal-ready .reveal-on-scroll.reveal-left.is-revealed {
+    transform: translateX(0);
+}
+
+.reveal-ready .reveal-on-scroll.reveal-right {
+    transform: translateX(35px);
+}
+.reveal-ready .reveal-on-scroll.reveal-right.is-revealed {
+    transform: translateX(0);
+}
+
+.reveal-ready .reveal-on-scroll.reveal-scale {
+    transform: scale(0.96) translateY(15px);
+}
+.reveal-ready .reveal-on-scroll.reveal-scale.is-revealed {
+    transform: scale(1) translateY(0);
+}
+
+.reveal-ready .reveal-delay-1 { transition-delay: 100ms; }
+.reveal-ready .reveal-delay-2 { transition-delay: 200ms; }
+.reveal-ready .reveal-delay-3 { transition-delay: 300ms; }
+.reveal-ready .reveal-delay-4 { transition-delay: 400ms; }
+
+@media (max-width: 640px) {
+    .reveal-ready .reveal-on-scroll {
+        transform: translateY(18px);
+        transition-duration: 0.6s;
+    }
+    .reveal-ready .reveal-on-scroll.reveal-left {
+        transform: translateY(18px);
+    }
+    .reveal-ready .reveal-on-scroll.reveal-right {
+        transform: translateY(18px);
+    }
+    .reveal-ready .reveal-delay-1,
+    .reveal-ready .reveal-delay-2,
+    .reveal-ready .reveal-delay-3,
+    .reveal-ready .reveal-delay-4 {
+        transition-delay: 50ms;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-ready .reveal-on-scroll,
+    .reveal-ready .reveal-on-scroll.reveal-left,
+    .reveal-ready .reveal-on-scroll.reveal-right,
+    .reveal-ready .reveal-on-scroll.reveal-scale {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+/* ==========================================================================
+   CARROSSEL DE SHOWROOM DAS LANDING PAGES REGIONAIS (MOOCA E GUARULHOS)
+   ========================================================================== */
+.showroom-carousel {
+    touch-action: pan-y pinch-zoom;
+}
+
+.showroom-slide {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.98);
+}
+
+.showroom-slide.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    z-index: 10;
+}
+
+.showroom-dot {
+    transition: all 0.3s ease;
+}
+
+.showroom-dot.active {
+    width: 2rem;
+    background-color: #E52421;
+}
+
+.tech-grid-pattern {
+    background-image: radial-gradient(rgba(34, 34, 34, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+.card-elevation-2xl {
+    background-color: #ffffff;
+    box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.09), 0 8px 24px -4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-elevation-2xl:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 32px 64px -14px rgba(229, 36, 33, 0.16), 0 12px 28px -6px rgba(0, 0, 0, 0.06);
+    border-color: rgba(229, 36, 33, 0.5);
+}
+
+.card-luxury-lift {
+    background-color: #ffffff;
+    border: 1px solid rgba(229, 231, 235, 0.95);
+    box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.08), 0 6px 16px -3px rgba(0, 0, 0, 0.04);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-luxury-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 56px -10px rgba(229, 36, 33, 0.16), 0 10px 24px -4px rgba(0, 0, 0, 0.05);
+    border-color: rgba(229, 36, 33, 0.45);
+}
+
+.card-luxury-subtle {
+    background-color: #ffffff;
+    border: 1px solid rgba(229, 231, 235, 0.95);
+    box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.06), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.card-luxury-subtle:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.1), 0 6px 16px -3px rgba(229, 36, 33, 0.08);
+    border-color: rgba(229, 36, 33, 0.35);
+}
