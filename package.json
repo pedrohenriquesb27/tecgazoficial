@@ -2,11 +2,7 @@
   "name": "tecgazoficial",
   "version": "1.0.0",
   "description": "Site Oficial TECGAZ Aquecedores - Venda, Instalação e Manutenção Especializada em São Paulo e Grande SP",
-  "main": "index.html",
   "scripts": {
-    "start": "node server.js"
-  },
-  "devDependencies": {
-    "sharp": "^0.35.5"
+    "dev": "node server.js"
   }
 }

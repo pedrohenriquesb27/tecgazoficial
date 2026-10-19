@@ -1,5 +1,5 @@
 {
-  "name": "tecgazoficial",
+  "framework": null,
   "cleanUrls": true,
   "rewrites": [
     { "source": "/tecgazmooca", "destination": "/tecgazmooca.html" },
